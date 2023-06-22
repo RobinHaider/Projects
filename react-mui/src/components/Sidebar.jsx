@@ -19,72 +19,74 @@ import {
 const Sidebar = () => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <Home />
-            </ListItemIcon>
-            <ListItemText primary='Inbox' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <ArticleRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary='Pages' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <GroupIcon />
-            </ListItemIcon>
-            <ListItemText primary='Groups' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <StorefrontIcon />
-            </ListItemIcon>
-            <ListItemText primary='Marketplace' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <Diversity3Icon />
-            </ListItemIcon>
-            <ListItemText primary='Friends' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <SettingsIcon />
-            </ListItemIcon>
-            <ListItemText primary='Settings' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <AccountBoxIcon />
-            </ListItemIcon>
-            <ListItemText primary='Profile' />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component='a' href='#'>
-            <ListItemIcon>
-              <DarkModeIcon />
-            </ListItemIcon>
-            <Switch />
-          </ListItemButton>
-        </ListItem>
-      </List>
+      <Box position={'fixed'}>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary='Inbox' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <ArticleRoundedIcon />
+              </ListItemIcon>
+              <ListItemText primary='Pages' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <GroupIcon />
+              </ListItemIcon>
+              <ListItemText primary='Groups' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <StorefrontIcon />
+              </ListItemIcon>
+              <ListItemText primary='Marketplace' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <Diversity3Icon />
+              </ListItemIcon>
+              <ListItemText primary='Friends' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <SettingsIcon />
+              </ListItemIcon>
+              <ListItemText primary='Settings' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <AccountBoxIcon />
+              </ListItemIcon>
+              <ListItemText primary='Profile' />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component='a' href='#'>
+              <ListItemIcon>
+                <DarkModeIcon />
+              </ListItemIcon>
+              <Switch />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 };
